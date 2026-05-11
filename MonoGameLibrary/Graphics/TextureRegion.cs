@@ -8,12 +8,15 @@ namespace MonoGameLibrary.Graphics;
 /// </summary>
 public class TextureRegion
 {
+    #region Constructor
     public TextureRegion(Texture2D texture, int x, int y, int width, int height)
     {
         Texture = texture;
         SourceRectangle = new Rectangle(x, y, width, height);
     }
+    #endregion Constructor
 
+    #region Properties
     /// <summary>
     /// Gets or Sets the source texture this texture region is part of.
     /// </summary>
@@ -33,7 +36,9 @@ public class TextureRegion
     /// Gets the height, in pixels, of this texture region.
     /// </summary>
     public int Height => SourceRectangle.Height;
-    
+    #endregion Properties
+
+    #region Methods
     /// <summary>
     /// Submit this texture region for drawing in the current batch.
     /// </summary>
@@ -95,4 +100,5 @@ public class TextureRegion
             layerDepth
         );
     }
+    #endregion Methods
 }
