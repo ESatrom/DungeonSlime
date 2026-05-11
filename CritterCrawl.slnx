@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="CritterCrawl/CritterCrawl.csproj" />
+  <Project Path="MonoGameLibrary/MonoGameLibrary.csproj" />
+</Solution>
