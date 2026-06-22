@@ -13,6 +13,24 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin ../../Assets/bounce.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../Assets/bounce.wav;audio/bounce.wav
+
+#begin ../../Assets/collect.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../Assets/collect.wav;audio/collect.wav
+
+#begin ../../Assets/theme.ogg
+/importer:OggImporter
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:../../Assets/theme.ogg;audio/theme.ogg
+
 #begin images/atlas-definition.xml
 /copy:images/atlas-definition.xml
 
