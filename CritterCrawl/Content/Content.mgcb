@@ -52,3 +52,6 @@
 /processorParam:TextureFormat=Color
 /build:images/RedCritter.png
 
+#begin images/tilemap-definition.xml
+/copy:images/tilemap-definition.xml
+
