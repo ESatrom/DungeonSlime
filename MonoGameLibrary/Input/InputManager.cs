@@ -4,7 +4,7 @@ namespace MonoGameLibrary.Input;
 
 public class InputManager
 {
-    #region Constructor
+    #region Constructors
     /// <summary>
     /// Creates a new InputManager.
     /// </summary>
@@ -12,8 +12,14 @@ public class InputManager
     {
         Keyboard = new KeyboardInfo();
         Mouse = new MouseInfo();
+
+        GamePads = new GamePadInfo[4];
+        for (int i = 0; i < 4; i++)
+        {
+            GamePads[i] = new GamePadInfo((PlayerIndex)i);
+        }
     }
-    #endregion Constructor
+    #endregion Constructors
 
     #region Properties
     /// <summary>
@@ -25,10 +31,14 @@ public class InputManager
     /// Gets the state information of mouse input.
     /// </summary>
     public MouseInfo Mouse { get; private set; }
+
+    /// <summary>
+    /// Gets the state information of a gamepad.
+    /// </summary>
+    public GamePadInfo[] GamePads { get; private set; }
     #endregion Properties
 
-    #region Methods
-    /// <summary>
+    #region Methods/// <summary>
     /// Updates the state information for the keyboard, mouse, and gamepad inputs.
     /// </summary>
     /// <param name="gameTime">A snapshot of the timing values for the current frame.</param>
@@ -36,6 +46,13 @@ public class InputManager
     {
         Keyboard.Update();
         Mouse.Update();
+
+        for (int i = 0; i < 4; i++)
+        {
+            GamePads[i].Update(gameTime);
+        }
     }
     #endregion Methods
+
 }
+
