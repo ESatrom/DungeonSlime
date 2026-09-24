@@ -13,23 +13,23 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin ../../Assets/bounce.wav
+#begin audio/bounce.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:../../Assets/bounce.wav;audio/bounce.wav
+/build:audio/bounce.wav
 
-#begin ../../Assets/collect.wav
+#begin audio/collect.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:../../Assets/collect.wav;audio/collect.wav
+/build:audio/collect.wav
 
-#begin ../../Assets/theme.ogg
+#begin audio/theme.ogg
 /importer:OggImporter
 /processor:SongProcessor
 /processorParam:Quality=Best
-/build:../../Assets/theme.ogg;audio/theme.ogg
+/build:audio/theme.ogg
 
 #begin audio/ui.wav
 /importer:WavImporter
@@ -86,30 +86,6 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:images/background-pattern.png
-
-#begin images/logo.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:images/logo.png
-
-#begin images/RedCritter.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:images/RedCritter.png
 
 #begin images/tilemap-definition.xml
 /copy:images/tilemap-definition.xml
